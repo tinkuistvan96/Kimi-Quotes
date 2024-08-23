@@ -7,32 +7,44 @@
 
 import UIKit
 
-class QuoteCell: UICollectionViewCell {
-    
-    
+class QuoteCollectionViewCell: UICollectionViewCell {
     
     let blurView = UIVisualEffectView()
     let vibrancyView = UIVisualEffectView()
     let quoteLabel = UILabel()
     let quoteImageView = UIImageView()
     
-    static let reuseIdentifier = "QuoteCell"
+    static let cellIdentifier = "QuoteCell"
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setup()
+        style()
         layout()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        quoteLabel.text = nil
+        quoteImageView.image = nil
+    }
+    
+    func configure(with viewModel: QuoteCellViewModel) {
+        quoteLabel.text = viewModel.quoteText
+        quoteImageView.image = UIImage(named: viewModel.imageName)
+    }
 }
 
-extension QuoteCell {
-    private func setup() {
+extension QuoteCollectionViewCell {
+    private func style() {
         contentView.clipsToBounds = true
-        contentView.layer.cornerRadius = 10
+        contentView.layer.cornerRadius = 8
+        contentView.layer.shadowColor = UIColor.label.cgColor
+        contentView.layer.shadowOffset = CGSize(width: -4, height: 4)
+        contentView.layer.shadowOpacity = 0.3
         
         blurView.translatesAutoresizingMaskIntoConstraints = false
         let blurEffect = UIBlurEffect(style: .dark)
@@ -84,10 +96,5 @@ extension QuoteCell {
           vibrancyView.centerXAnchor.constraint(equalTo: blurView.contentView.centerXAnchor),
           vibrancyView.centerYAnchor.constraint(equalTo: blurView.contentView.centerYAnchor)
         ])
-    }
-    
-    func configure(with vm: QuoteViewModel) {
-        quoteLabel.text = vm.quote
-        quoteImageView.image = vm.image
     }
 }

@@ -7,33 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F74227F283F86510097FD60 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F74227E283F86500097FD60 /* QuoteViewController.swift */; };
+		4F74227F283F86510097FD60 /* QuoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F74227E283F86500097FD60 /* QuoteDetailViewController.swift */; };
 		4F88AB6A281481B4005E18FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F88AB69281481B4005E18FC /* AppDelegate.swift */; };
 		4F88AB6C281481B4005E18FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F88AB6B281481B4005E18FC /* SceneDelegate.swift */; };
-		4F88AB6E281481B4005E18FC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F88AB6D281481B4005E18FC /* HomeViewController.swift */; };
+		4F88AB6E281481B4005E18FC /* QuoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F88AB6D281481B4005E18FC /* QuoteListViewController.swift */; };
 		4F88AB73281481BA005E18FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F88AB72281481BA005E18FC /* Assets.xcassets */; };
 		4F88AB76281481BA005E18FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F88AB74281481BA005E18FC /* LaunchScreen.storyboard */; };
 		4F88AB8028157757005E18FC /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F88AB7F28157757005E18FC /* APIService.swift */; };
 		4F88AB822815787D005E18FC /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F88AB812815787D005E18FC /* Quote.swift */; };
+		4FAE114D2C788C740014BD85 /* QuoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE114C2C788C740014BD85 /* QuoteListView.swift */; };
+		4FAE11502C78DE630014BD85 /* QuoteListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE114F2C78DE630014BD85 /* QuoteListViewViewModel.swift */; };
+		4FAE11522C78E6FA0014BD85 /* QuoteCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE11512C78E6FA0014BD85 /* QuoteCellViewModel.swift */; };
+		4FAE11542C7930420014BD85 /* QuoteDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE11532C7930420014BD85 /* QuoteDetailViewViewModel.swift */; };
+		4FAE11562C79363B0014BD85 /* QuoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE11552C79363B0014BD85 /* QuoteDetailView.swift */; };
 		4FC0975E2858E03100090B2D /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC0975D2858E03100090B2D /* AvatarView.swift */; };
 		4FC097602858E57300090B2D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC0975F2858E57300090B2D /* Utilities.swift */; };
-		4FCEBCCC282BB4EF00C32A21 /* QuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEBCCB282BB4EF00C32A21 /* QuoteCell.swift */; };
+		4FCEBCCC282BB4EF00C32A21 /* QuoteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEBCCB282BB4EF00C32A21 /* QuoteCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4F74227E283F86500097FD60 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
+		4F74227E283F86500097FD60 /* QuoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailViewController.swift; sourceTree = "<group>"; };
 		4F88AB66281481B4005E18FC /* KimiQuote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KimiQuote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F88AB69281481B4005E18FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F88AB6B281481B4005E18FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4F88AB6D281481B4005E18FC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4F88AB6D281481B4005E18FC /* QuoteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteListViewController.swift; sourceTree = "<group>"; };
 		4F88AB72281481BA005E18FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F88AB75281481BA005E18FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F88AB77281481BA005E18FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F88AB7F28157757005E18FC /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		4F88AB812815787D005E18FC /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		4FAE114C2C788C740014BD85 /* QuoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteListView.swift; sourceTree = "<group>"; };
+		4FAE114F2C78DE630014BD85 /* QuoteListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteListViewViewModel.swift; sourceTree = "<group>"; };
+		4FAE11512C78E6FA0014BD85 /* QuoteCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCellViewModel.swift; sourceTree = "<group>"; };
+		4FAE11532C7930420014BD85 /* QuoteDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailViewViewModel.swift; sourceTree = "<group>"; };
+		4FAE11552C79363B0014BD85 /* QuoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailView.swift; sourceTree = "<group>"; };
 		4FC0975D2858E03100090B2D /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		4FC0975F2858E57300090B2D /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		4FCEBCCB282BB4EF00C32A21 /* QuoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCell.swift; sourceTree = "<group>"; };
+		4FCEBCCB282BB4EF00C32A21 /* QuoteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +78,8 @@
 			children = (
 				4F88AB69281481B4005E18FC /* AppDelegate.swift */,
 				4F88AB6B281481B4005E18FC /* SceneDelegate.swift */,
-				4FB9DC482847B3CD00423D74 /* View */,
+				4FB9DC482847B3CD00423D74 /* Views */,
+				4FAE114E2C78DE220014BD85 /* ViewModels */,
 				4FB9DC472847B39200423D74 /* Services */,
 				4FB9DC462847B1EA00423D74 /* Model */,
 				4FC097612858E58900090B2D /* Utilities */,
@@ -77,6 +88,16 @@
 				4F88AB77281481BA005E18FC /* Info.plist */,
 			);
 			path = KimiQuote;
+			sourceTree = "<group>";
+		};
+		4FAE114E2C78DE220014BD85 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4FAE114F2C78DE630014BD85 /* QuoteListViewViewModel.swift */,
+				4FAE11512C78E6FA0014BD85 /* QuoteCellViewModel.swift */,
+				4FAE11532C7930420014BD85 /* QuoteDetailViewViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		4FB9DC462847B1EA00423D74 /* Model */ = {
@@ -95,15 +116,17 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		4FB9DC482847B3CD00423D74 /* View */ = {
+		4FB9DC482847B3CD00423D74 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4F88AB6D281481B4005E18FC /* HomeViewController.swift */,
-				4F74227E283F86500097FD60 /* QuoteViewController.swift */,
-				4FCEBCCB282BB4EF00C32A21 /* QuoteCell.swift */,
+				4F88AB6D281481B4005E18FC /* QuoteListViewController.swift */,
+				4FAE114C2C788C740014BD85 /* QuoteListView.swift */,
+				4F74227E283F86500097FD60 /* QuoteDetailViewController.swift */,
+				4FCEBCCB282BB4EF00C32A21 /* QuoteCollectionViewCell.swift */,
 				4FC0975D2858E03100090B2D /* AvatarView.swift */,
+				4FAE11552C79363B0014BD85 /* QuoteDetailView.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		4FC097612858E58900090B2D /* Utilities */ = {
@@ -184,14 +207,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FCEBCCC282BB4EF00C32A21 /* QuoteCell.swift in Sources */,
-				4F88AB6E281481B4005E18FC /* HomeViewController.swift in Sources */,
+				4FCEBCCC282BB4EF00C32A21 /* QuoteCollectionViewCell.swift in Sources */,
+				4F88AB6E281481B4005E18FC /* QuoteListViewController.swift in Sources */,
 				4F88AB6A281481B4005E18FC /* AppDelegate.swift in Sources */,
+				4FAE114D2C788C740014BD85 /* QuoteListView.swift in Sources */,
 				4F88AB8028157757005E18FC /* APIService.swift in Sources */,
 				4F88AB822815787D005E18FC /* Quote.swift in Sources */,
 				4FC0975E2858E03100090B2D /* AvatarView.swift in Sources */,
+				4FAE11502C78DE630014BD85 /* QuoteListViewViewModel.swift in Sources */,
+				4FAE11562C79363B0014BD85 /* QuoteDetailView.swift in Sources */,
+				4FAE11542C7930420014BD85 /* QuoteDetailViewViewModel.swift in Sources */,
 				4FC097602858E57300090B2D /* Utilities.swift in Sources */,
-				4F74227F283F86510097FD60 /* QuoteViewController.swift in Sources */,
+				4FAE11522C78E6FA0014BD85 /* QuoteCellViewModel.swift in Sources */,
+				4F74227F283F86510097FD60 /* QuoteDetailViewController.swift in Sources */,
 				4F88AB6C281481B4005E18FC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

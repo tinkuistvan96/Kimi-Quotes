@@ -1,5 +1,5 @@
 //
-//  QuoteViewController.swift
+//  QuoteDetailViewController.swift
 //  KimiQuote
 //
 //  Created by Tinku István on 2022. 05. 26..
@@ -7,15 +7,17 @@
 
 import UIKit
 
-class QuoteViewController: UIViewController {
+class QuoteDetailViewController: UIViewController {
     
     let label = UILabel()
     let imageView = UIImageView()
-    var quoteViewModel : QuoteViewModel!
+    let detailView: QuoteDetailView
+    var viewModel : QuoteCellViewModel!
     
-    init(quoteViewModel: QuoteViewModel) {
+    init(viewModel: QuoteCellViewModel) {
+        self.viewModel = viewModel
+        self.detailView = QuoteDetailView()
         super.init(nibName: nil, bundle: nil)
-        self.quoteViewModel = quoteViewModel
     }
     
     required init?(coder: NSCoder) {
@@ -30,7 +32,7 @@ class QuoteViewController: UIViewController {
 }
 
 
-extension QuoteViewController {
+extension QuoteDetailViewController {
     private func style() {
         
         view.backgroundColor = UIColor.appBackgroundColor
@@ -39,11 +41,11 @@ extension QuoteViewController {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
-        imageView.image = quoteViewModel.image
+        imageView.image = UIImage(named: viewModel.imageName)
         
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .white
-        label.text = quoteViewModel.quote
+        label.text = viewModel.quoteText
         label.font = UIFont.preferredFont(forTextStyle: .headline)
         label.numberOfLines = 0
     }

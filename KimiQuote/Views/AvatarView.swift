@@ -15,7 +15,7 @@ class AvatarView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        avatarImgView.image = UIImage(named: "kimi7")
+        avatarImgView.image = UIImage(named: "kimiDefault")
         avatarImgView.contentMode = .scaleAspectFill
         avatarImgView.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(avatarImgView)

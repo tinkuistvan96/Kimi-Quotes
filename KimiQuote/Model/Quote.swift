@@ -12,25 +12,23 @@ struct Quote: Codable {
     let id: Int
     let quote: String
     let year: Int?
-}
-
-struct QuoteViewModel {
-    let quote: String
-    let image: UIImage?
-}
-
-struct KimiImages {
-    static let images = [
-            UIImage(named: "kimi1"),
-            UIImage(named: "kimi2"),
-            UIImage(named: "kimi3"),
-            UIImage(named: "kimi4"),
-            UIImage(named: "kimi5"),
-            UIImage(named: "kimi6"),
-            UIImage(named: "kimi7")
-    ]
     
-    static func getImage() -> UIImage? {
-        return images.randomElement() ?? nil
+    var imageName: String {
+        guard let year = year else { return "kimiDefault" }
+        
+        switch year {
+        case 2002..<2006:
+            return "kimiMclaren"
+        case 2007..<2009:
+            return "kimiFerrari"
+        case 2012..<2013:
+            return "kimiLotus"
+        case 2014..<2018:
+            return "kimiFerrari"
+        case 2019..<2021:
+            return "kimiAlfa"
+        default:
+            return "kimiDefault"
+        }
     }
 }
